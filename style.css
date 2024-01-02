@@ -21,6 +21,7 @@ body {
 }
 
 .primary-page {
+  display: none;
   width: 375px;
   border: 1px solid black;
 }
@@ -70,7 +71,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.input-container .submit {
+.input-container .submit, .dimiss{
   height: 5.5rem;
   border: none;
   border-radius: 0.8rem;
@@ -81,5 +82,33 @@ body {
 }
 
 .secondary-page {
-  display: none;
+  display: grid;
+  width: 375px;
+
+  border: 1px solid black;
+  padding-top: 15rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.thanks h1 {
+  font-size: 4rem;
+  margin-top: 3rem;
+  color: var(--Dark-Slate-Grey);
+  line-height: 4rem;
+  margin-bottom: 3rem;
+}
+
+.thanks p {
+  color: var(--Dark-Slate-Grey);
+  line-height: 2.4rem;
+  margin-bottom: 26rem;
+}
+
+.thanks p span {
+  font-weight: 700;
+}
+
+.dimiss {
+  margin-bottom: 4rem;
 }
