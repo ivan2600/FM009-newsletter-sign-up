@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+.primary-page {
+  width: 375px;
+  border: 1px solid black;
+}
+
+.mail-container {
+  padding: 3rem 2.5rem;
+}
+
+.mail-container h1 {
+  font-size: 3.8rem;
+  color: var(--Dark-Slate-Grey);
+  margin-bottom: 2rem;
+}
+
+.mail-container .p60000 {
+  margin-bottom: 3rem;
+}
+
+.mail-container p {
+  display: flex;
+  color: var(--Dark-Slate-Grey);
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.mail-container span img {
+  margin-right: 1.5rem;
+}
+
+.mail-container h6 {
+  color: var(--Dark-Slate-Grey);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.input-container {
+  display: grid;
+}
+
+.input-container .mail {
+  height: 5.5rem;
+  border: 2px solid rgb(206, 201, 201);
+  border-radius: 0.8rem;
+  padding: 2.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.input-container .submit {
+  height: 5.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.secondary-page {
+  display: none;
+}
