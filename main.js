@@ -33,3 +33,8 @@ submit.addEventListener('click', (e)=>{
 
   }
 })
+
+mail.addEventListener('keypress', ()=>{
+  mail.classList.remove('active');
+  alertMsg.classList.remove('active');
+})
