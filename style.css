@@ -18,12 +18,22 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
 }
 
 .primary-page {
   display: grid;
   width: 375px; 
   margin: 0 auto;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.mobile-img {
+  display: block;
 }
 
 .mail-container {
@@ -161,4 +171,74 @@ body {
 
 .dimiss {
   margin-bottom: 4rem;
+}
+
+@media screen and (min-width:1000px) {
+  body {
+    background-color: var(--Charcoal-Grey);
+    padding-top: 50px;
+  }
+  .desktop-img {
+    display: block;
+    
+  }
+  
+  .mobile-img {
+    display: none;
+  }
+
+  .primary-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "mail img";
+    width: 900px; 
+    margin: 0 auto;
+    background-color: var(--White);
+    padding-left: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 35px;
+  }
+  .img-container {
+    grid-area: img;
+  }
+  .mail-container {
+    grid-area: mail;
+  }
+
+  .mail-container h1 {
+    font-size: 5.5rem;
+    color: var(--Dark-Slate-Grey);
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .secondary-page {
+    display: none;
+    width: 500px;
+    padding-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 35px;
+  }
+  .thanks p {
+    color: var(--Dark-Slate-Grey);
+    line-height: 2.4rem;
+    margin-bottom: 4rem;
+    padding-right: 3rem;
+  }
+  .thanks h1 {
+    font-size: 5.5rem;
+    margin-top: 3rem;
+    color: var(--Dark-Slate-Grey);
+    line-height: 5.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .dimiss {
+    margin-bottom: 6rem;
+  }
+  
 }
